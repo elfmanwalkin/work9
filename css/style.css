@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
+
+/* Global Styles ============================================== */
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.logo {
+    width: 5em;
+}
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+/* Typography ============================================== */
+
+.title {
+    font-size: 1.7rem;
+    margin-bottom: 1.5em;
+}
+.title span {
+    font-weight: 300;
+    display: block;
+    font-size: .85em;
+}
+
+/* Buttons ============================================== */
+.button {
+    display: inline-block;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    border-width: 2px;
+    border-style: solid;
+    padding: .5em 1.1em;
+}
+.container .button:hover,
+.container .button:focus {
+    background: rgba(255, 255, 255, 0.35);
+}
+/* Header ============================================== */
+header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 1em;
+    text-shadow: 2px 2px #000;
+    
+}
+nav ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+nav li {
+    display: inline-block;
+    margin: 1em;
+}
+nav a {
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: .8rem;
+    padding: .5em;
+    color: #fff;
+}
+nav a:hover,
+nav a:focus {
+    color: #ddd;
+}
+/* Home-hero ============================================== */
+.home-hero {
+    background-image: url(../img/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 10em 0;
+    color: #fff;
+}
+.home-hero h1,
+.home-hero span {
+    text-shadow: 2px 2px #000;
+}
+
+/* Media Queries ============================================== */
+@media(min-width: 768px) {
+    .title {
+        font-size: 3rem;
+    }
+    .logo {
+        float: left;
+        width: 7em;
+    }
+    nav {
+        float: right;
+        margin-top: .5em
+    }
+    nav a {
+        font-size: 1.1em;
+    }
+    .home-hero {
+        height: 100vh;
+        padding-top: 35vh;
+    }
+    .button {
+        font-size: 1.5em;
+    }
+}
